@@ -3,7 +3,7 @@
 TODO: module docstring
 """
 
-# TODO: comment
+# TODO(CI): comment
 
 # TODO: multiline
 #       comment
@@ -16,12 +16,35 @@ def foo():
     """
     pass
 
+
 # normal comment
 
+
 def bar():
-    """Bar.
-    """
+    """Bar."""
+    # TODO: indented comment
     pass
+
 
 BAZ = 1
 """Baz."""
+
+# todo-issues: off
+
+# TODO: skipped
+
+"""TODO: skipped"""
+
+# todo-issues: on
+
+# TODO: another comment
+
+# todo-issues: on/off
+
+# TODO: skipped
+
+"""TODO: skipped"""
+
+# todo-issues: on/off
+
+# TODO: yet another comment
